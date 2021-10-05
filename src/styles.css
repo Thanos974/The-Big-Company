@@ -1,0 +1,40 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Tailwind CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Composants avec Tailxinds CSS*/
+.link {
+  @apply hover:text-dark
+   transition
+   duration-300 cursor-pointer;
+}
+
+.button {
+  @apply bg-light
+  text-white
+  rounded-full
+  px-4
+  py-1
+  hover:bg-opacity-50
+  transition
+  duration-300
+  active:transform active:scale-95;
+}
+
+.input {
+  @apply border border-white
+  rounded
+  px-3
+  py-1
+  w-full
+  bg-transparent
+  placeholder-white;
+}
+
+.article {
+  @apply border border-light rounded p-5 group-hover:bg-light group-hover:text-white transition duration-300;
+}
